@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+  
+  	<com.klh.view.TitleBar
+        android:id="@+id/TitleBar1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true" >
+    </com.klh.view.TitleBar>
+    <EditText   
+    android:id="@+id/result"   
+    android:layout_width="fill_parent"   
+    android:layout_height="48dp" 
+    android:text=""  
+    android:singleLine="true"  
+    android:focusable="false"  
+    android:cursorVisible="false"
+    android:maxLines="1"  
+    />  
+  
+        
+        
+  
+    <TableLayout   
+    android:layout_width="fill_parent"   
+    android:layout_height="wrap_content"  
+    android:stretchColumns="0,1,2">  
+        <TableRow
+            android:layout_height="wrap_content"
+            >  
+            <Button android:id="@+id/btn_1" android:text="1" 
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="42dp"
+                />  
+            <Button android:id="@+id/btn_2" android:text="2" 
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                  android:layout_height="42dp"
+                />  
+            <Button android:id="@+id/btn_3" android:text="3" 
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                  android:layout_height="42dp"
+                />  
+          
+        </TableRow>  
+        <TableRow
+              android:layout_height="wrap_content"
+            >  
+            <Button android:id="@+id/btn_4" android:text="4" 
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                  android:layout_height="42dp"
+                />  
+            <Button android:id="@+id/btn_5" android:text="5" 
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                  android:layout_height="42dp"
+                />  
+            <Button android:id="@+id/btn_6" android:text="6" 
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                  android:layout_height="42dp"
+                />  
+           
+        </TableRow>  
+        <TableRow
+              android:layout_height="wrap_content"
+            >  
+            <Button android:id="@+id/btn_7" android:text="7"  android:layout_width="0dp"
+                android:layout_weight="1"
+                  android:layout_height="42dp"
+                />  
+            <Button android:id="@+id/btn_8" android:text="8"  android:layout_width="0dp"
+                android:layout_weight="1" 
+                  android:layout_height="42dp"
+                />  
+            <Button android:id="@+id/btn_9" android:text="9"  android:layout_width="0dp"
+                android:layout_weight="1"
+                  android:layout_height="42dp"
+                />  
+         
+        </TableRow>  
+        <TableRow
+               android:layout_width="wrap_content"
+            >  
+            <Button android:id="@+id/btn_pause" android:text="||"  android:layout_width="0dp"
+                android:layout_weight="1"
+                  android:layout_height="42dp"
+                />  
+            <Button android:id="@+id/btn_0" android:text="0"  android:layout_width="0dp"
+                android:layout_weight="1" 
+                  android:layout_height="42dp"
+                />  
+            <Button android:id="@+id/btn_clear" android:text="DEL"  android:layout_width="0dp"
+                android:layout_weight="1"
+                  android:layout_height="42dp"
+                />  
+            
+        </TableRow> 
+         <TableRow
+                android:layout_width="wrap_content">  
+            <Button android:id="@+id/btn_stop" android:text="停止"  android:layout_width="0dp"
+                android:layout_weight="1"
+                  android:layout_height="42dp"
+                 />  
+            <Button android:id="@+id/btn_play" android:text="播放"  android:layout_width="0dp"
+                android:layout_weight="1"
+                  android:layout_height="42dp"
+                />  
+            <Button android:id="@+id/btn_contorl" android:text="分区控制"  android:layout_width="0dp"
+                android:layout_weight="1"
+                
+                  android:layout_height="42dp"/>  
+            
+        </TableRow>   
+    </TableLayout>  
+  <LinearLayout
+      android:id="@+id/controlpage"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+     
+      android:orientation="vertical"
+     
+      >
+        <TableLayout   
+    android:layout_width="fill_parent"   
+    android:layout_height="wrap_content"  
+    android:stretchColumns="0,1,2">
+             <TableRow
+                    android:layout_height="wrap_content"
+                 >  
+           <CheckBox
+               android:id="@+id/ch_1"
+               android:layout_height="42dp"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:text="分区1"
+               ></CheckBox>
+           <CheckBox
+               android:id="@+id/ch_2"
+               android:layout_height="42dp"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+                android:text="分区2"
+               ></CheckBox>
+            <Button android:id="@+id/all" 
+                android:text="全开"  
+                android:layout_width="0dp"
+               android:layout_height="42dp"
+                android:layout_weight="1"/>  
+            
+        </TableRow>   
+            
+              <TableRow
+                      android:layout_height="wrap_content"
+                  >  
+           <CheckBox
+               android:id="@+id/ch_3"
+               android:layout_height="42dp"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:text="分区3"
+               ></CheckBox>
+           <CheckBox
+               android:id="@+id/ch_4"
+                android:layout_height="42dp"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+                android:text="分区4"
+               ></CheckBox>
+            <Button android:id="@+id/not" android:text="全关"  android:layout_width="0dp"
+                  android:layout_height="42dp"
+                android:layout_weight="1"/>  
+            
+        </TableRow>   
+          <TableRow
+                android:layout_height="wrap_content"
+              >  
+           <CheckBox
+               android:id="@+id/ch_5"
+            android:layout_height="42dp"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:text="分区5"
+               ></CheckBox>
+           <CheckBox
+               android:id="@+id/ch_6"
+               android:layout_height="42dp"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+                android:text="分区6"
+               ></CheckBox>
+            <Button android:id="@+id/ok" android:text="确定"  android:layout_width="0dp"
+                  android:layout_height="42dp"
+                android:layout_weight="1"/>  
+            
+        </TableRow>   
+          <TableRow
+                android:layout_height="wrap_content"
+              >  
+           <CheckBox
+               android:id="@+id/ch_7"
+               android:layout_height="42dp"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:text="分区7"
+               ></CheckBox>
+           <CheckBox
+               android:id="@+id/ch_8"
+               android:layout_height="42dp"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+                android:text="分区8"
+               ></CheckBox>
+            <Button android:id="@+id/send" android:text="输入" 
+                 android:layout_width="0dp"
+                   android:layout_height="42dp"
+                android:layout_weight="1"/>  
+            
+        </TableRow>   
+            
+             
+                   
+        </TableLayout>
+      
+      
+      
+  </LinearLayout>
+</LinearLayout>  
